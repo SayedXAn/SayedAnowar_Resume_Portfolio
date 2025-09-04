@@ -19,11 +19,102 @@
         <p class="designationText">
           Experience Engineer and Execution Specialist
         </p>
-        <p class="designationText">at Singularity (since 2020)</p>
+        <p class="designationText">at Singularity Limited (since 2020)</p>
+        <p class="designationText">anow.sayed@gmail.com +8801610099913</p>
       </div>
-      <!-- <div class = "nameText">
-                Sayed Anowar
-            </div> -->
     </div>
+
+    <div class="skillPanel">
+      <div class="skills">Unity Engine</div>
+      <div class="skills">C#</div>
+      <div class="skills">Python</div>
+      <div class="skills">C++</div>
+      <div class="skills">IOT</div>
+      <div class="skills">HTML</div>
+      <div class="skills">CSS</div>
+      <div class="skills">JavaScript</div>
+      <div class="skills">ReactJS</div>
+    </div>
+
+    <div class="profileLinksPanel">
+      <div>
+        <a class="profileLinks" href="https://leetcode.com/u/SayedXAn/" target="_blank">
+          <img class="profileLogos" src="Photos/leetcode.png" alt="LeetCode" />
+        </a>
+      </div>
+      <div>
+        <a class="profileLinks" href="https://judge.beecrowd.com/en/profile/352658" target="_blank">
+          <img class="profileLogos" src="Photos/beecrowd.jpg" alt="Beecrowd" />
+        </a>
+      </div>
+      <div>
+        <a class="profileLinks" href="https://github.com/SayedXAn" target="_blank">
+          <img class="profileLogos" src="Photos/github_logo.png" alt="GitHub" />
+        </a>
+      </div>
+
+      <div>
+        <a class="profileLinks" href="https://www.linkedin.com/in/anow-sayed/" target="_blank">
+          <img class="profileLogos" src="Photos/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+
+      <div>
+        <a class="profileLinks" href="mailto:anow.sayed@gmail.com" id="emailBtn">
+          <img class="profileLogos" src="Photos/gmail.png" alt="Email" />
+        </a>
+      </div>
+      <div>
+        <a class="profileLinks" href="tel:+8801610099913" id="phoneBtn">
+          <img class="profileLogos" src="Photos/phone.png" alt="Phone" />
+        </a>
+      </div>
+    </div>
+    <div id="toast"></div>
   </div>
 </body>
+
+<script>
+  function copyToClipboard(text, message) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(message);
+      });
+    } else {
+      // fallback for old browsers
+      const tempInput = document.createElement("input");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      showToast(message);
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.className = "show";
+    setTimeout(() => {
+      toast.className = toast.className.replace("show", "");
+    }, 2000);
+  }
+
+  // Event listeners for desktop
+  document.getElementById("emailBtn").addEventListener("click", function (e) {
+    if (!/Mobi|Android/i.test(navigator.userAgent)) {
+      // desktop only
+      e.preventDefault(); // stop mailto on desktop
+      copyToClipboard("anow.sayed@gmail.com", "Email copied to clipboard!");
+    }
+  });
+
+  document.getElementById("phoneBtn").addEventListener("click", function (e) {
+    if (!/Mobi|Android/i.test(navigator.userAgent)) {
+      // desktop only
+      e.preventDefault(); // stop tel: on desktop
+      copyToClipboard("+8801610099913", "Phone number copied to clipboard!");
+    }
+  });
+</script>
