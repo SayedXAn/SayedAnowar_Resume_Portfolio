@@ -1,16 +1,15 @@
 body{
-    background-color: rgb(60, 255, 0);
+    background-color: rgb(255, 0, 200);
     display: flex;
     justify-content: center;
 }
 
 .backgroundDiv{
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 224, 85);
     height: 98vh;
-    width: 85%;
     border-radius: 20px;    
-    max-width: 1200px;
+    max-width: 565px;
     min-width: 400px;
     margin: 0 auto;
     
@@ -21,33 +20,56 @@ body{
     margin: 20px;
     border-radius: 18px;
     height: 120px;
-    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
 }
-
-.nameText{
-    display: inline;
-    color: rgb(0, 0, 0);
-
-}
-
-.profilePhotoDiv{
-    position: relative;   
-    background-color: rgb(91, 0, 177);
-    height: 50%;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-    vertical-align: middle;
-    border-radius: 15px;
-    transform: translate(0, 50%);
-}
-
 .profilePhoto{
-    background-color: rgb(255, 0, 0);
-    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 90%;
     margin: 0px;
+    margin-right: 6px;
+    padding: 0px;
     border-radius: 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    
 
 }
+
+.topPanelTextDiv{
+    display: inline-block;
+    background-color: rgb(91, 0, 177);
+    vertical-align: top;
+    height: 90%;
+    padding: 0px;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 6px;
+    width: 420px;
+
+}
+.nameText{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 28px;
+    text-align: center;    
+}
+.designationText{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 13px;
+    text-align: center; 
+}
+
+
+
