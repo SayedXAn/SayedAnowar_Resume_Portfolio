@@ -2,6 +2,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
   <title>Sayed Anowar - Resume</title>
   <link rel="stylesheet" href="allCss.css" />
 </head>
@@ -15,15 +21,25 @@
         height="80"
       />
       <div class="topPanelTextDiv">
-        <p class="nameText">Sayed Anowar</p>
+        <p class="nameText">SAYED ANOWAR</p>
         <p class="designationText">
           Experience Engineer and Execution Specialist
         </p>
-        <p class="designationText">at Singularity Limited (since 2020)</p>
-        <p class="designationText">anow.sayed@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+8801610099913</p>
+        <p class="designationText">
+          at
+          <a
+            class="hyperLinks"
+            href="https://singularitybd.com/"
+            target="_blank"
+            >Singularity Limited</a
+          >
+          <span> (since 2020)</span>
+        </p>
+        <p class="designationText">
+          anow.sayed@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+880-1610099913
+        </p>
       </div>
-    </div>   
-    
+    </div>
 
     <div class="skillPanel">
       <div class="skills">Unity Engine</div>
@@ -37,40 +53,48 @@
       <div class="skills">ReactJS</div>
     </div>
 
-    <div class="profileLinksPanel">
-      <div>
-        <a class="profileLinks" href="https://leetcode.com/u/SayedXAn/" target="_blank">
-          <img class="profileLogos" src="Photos/leetcode.png" alt="LeetCode" />
-        </a>
+    <div class="linksWrapper">
+      <div class="profileLinksPanel">
+        <div>
+          <a class="profileLinks" href="https://leetcode.com/u/SayedXAn/" target="_blank">
+            <img class="profileLogos" src="Photos/leetcode.png" alt="LeetCode" />
+          </a>
+        </div>
+        <div>
+          <a class="profileLinks" href="https://judge.beecrowd.com/en/profile/352658" target="_blank">
+            <img class="profileLogos" src="Photos/beecrowd.jpg" alt="Beecrowd" />
+          </a>
+        </div>
+        <div>
+          <a class="profileLinks" href="https://github.com/SayedXAn" target="_blank">
+            <img class="profileLogos" src="Photos/github_logo.png" alt="GitHub" />
+          </a>
+        </div>
+        <div>
+          <a class="profileLinks" href="https://www.linkedin.com/in/anow-sayed/" target="_blank">
+            <img class="profileLogos" src="Photos/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div>
+          <a class="profileLinks" href="mailto:anow.sayed@gmail.com" id="emailBtn">
+            <img class="profileLogos" src="Photos/gmail.png" alt="Email" />
+          </a>
+        </div>
+        <div>
+          <a class="profileLinks" href="tel:+8801610099913" id="phoneBtn">
+            <img class="profileLogos" src="Photos/phone.png" alt="Phone" />
+          </a>
+        </div>
       </div>
-      <div>
-        <a class="profileLinks" href="https://judge.beecrowd.com/en/profile/352658" target="_blank">
-          <img class="profileLogos" src="Photos/beecrowd.jpg" alt="Beecrowd" />
-        </a>
-      </div>
-      <div>
-        <a class="profileLinks" href="https://github.com/SayedXAn" target="_blank">
-          <img class="profileLogos" src="Photos/github_logo.png" alt="GitHub" />
-        </a>
-      </div>
-
-      <div>
-        <a class="profileLinks" href="https://www.linkedin.com/in/anow-sayed/" target="_blank">
-          <img class="profileLogos" src="Photos/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-
-      <div>
-        <a class="profileLinks" href="mailto:anow.sayed@gmail.com" id="emailBtn">
-          <img class="profileLogos" src="Photos/gmail.png" alt="Email" />
-        </a>
-      </div>
-      <div>
-        <a class="profileLinks" href="tel:+8801610099913" id="phoneBtn">
-          <img class="profileLogos" src="Photos/phone.png" alt="Phone" />
-        </a>
-      </div>
+    
+      <a class="portfolioHyperlink" href="https://portfolio.sayedanowar.xyz/" target="_blank">
+        <div class="portfolioText">
+          <span>Portfolio</span>
+        </div>
+      </a>
     </div>
+    
+
     <div id="toast"></div>
   </div>
 </body>
@@ -107,7 +131,10 @@
     if (!/Mobi|Android/i.test(navigator.userAgent)) {
       // desktop only
       e.preventDefault(); // stop mailto on desktop
-      copyToClipboard("anow.sayed@gmail.com", "anow.sayed@gmail.com - Email copied to clipboard!");
+      copyToClipboard(
+        "anow.sayed@gmail.com",
+        "anow.sayed@gmail.com - Email copied to clipboard!"
+      );
     }
   });
 
@@ -115,7 +142,10 @@
     if (!/Mobi|Android/i.test(navigator.userAgent)) {
       // desktop only
       e.preventDefault(); // stop tel: on desktop
-      copyToClipboard("+8801610099913", "+8801610099913 - Phone number copied to clipboard!");
+      copyToClipboard(
+        "+8801610099913",
+        "+8801610099913 - Phone number copied to clipboard!"
+      );
     }
   });
 </script>
