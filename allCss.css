@@ -7,10 +7,12 @@ body {
 .backgroundDiv {
   display: block;
   background-color: rgb(255, 224, 85);
-  height: 98vh;
   border-radius: 20px;
-  max-width: 565px;
-  min-width: 400px;
+  width: 800px;
+  min-width: 350px;
+
+  height: 98%;
+  min-height: 350px;
   margin: 0 auto;
 }
 
@@ -20,6 +22,8 @@ body {
   margin-top: 15px;
   border-radius: 18px;
   height: 120px;
+  min-width: 50px;
+  
 
   display: flex;
   align-items: center;
@@ -48,7 +52,7 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-right: 6px;
-  width: 420px;
+  width: 100%;
 }
 
 .nameText {
@@ -106,7 +110,7 @@ body {
   margin: 10px;
   margin-top: 15px;
   border-radius: 18px;
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
