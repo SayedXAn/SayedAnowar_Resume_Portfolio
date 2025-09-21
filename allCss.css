@@ -70,7 +70,7 @@ body {
   padding: 0px;
   margin: 0px;
   color: rgb(43, 43, 43);
-  font-size: 13px;
+  font-size: 11px;
   text-align: center;
 
   font-weight: 500;
@@ -81,8 +81,7 @@ body {
   margin: 10px;
   margin-top: 15px;
   border-radius: 18px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
   min-height: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -94,11 +93,11 @@ body {
 .skills {
   background-color: rgb(255, 255, 255);
   height: 25px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
   margin-top: 2px;
   margin-bottom: 2px;
-  border-radius: 3px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,20 +106,19 @@ body {
 }
 
 .profileLinksPanel {
-  background-color: rgb(167, 167, 167);
+  background-color: rgb(235, 0, 0);
   margin: 0px;
   margin-top: 15px;
   
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
   
-  min-width: 220px;
+  min-width: 355px;
   border-radius: 18px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35%;
 }
 
 .profileLinks {
@@ -204,8 +202,14 @@ body {
 
 .linksWrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
+  
   gap: 5px;
+}
+.panelNameText{
+  color: white;
+  font-weight: 600;
 }
 
 
